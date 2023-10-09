@@ -6,6 +6,7 @@ function App() {
     <>
       <div className="main">
         <img src={image} alt="website in progress" />
+        <p>In progress</p>
       </div>
     </>
   );
