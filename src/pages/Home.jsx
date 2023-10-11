@@ -1,9 +1,17 @@
 const Home = () => {
-    return (
-      <div className="container vw-100 vh-100 d-flex justify-content-center align-items-center">
-        <h1>Home page</h1>
+  return (
+    <main className="container">
+      <div className="row d-flex justify-content-center align-items-center vw-100 vh-100">
+        <div className="col-lg-8">
+          <p className="lead">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
+            tempora dicta excepturi temporibus, eum modi natus aspernatur quas?
+            Repellat, voluptatem?
+          </p>
+        </div>
       </div>
-    );
-  };
-  
-  export default Home;
+    </main>
+  );
+};
+
+export default Home;
