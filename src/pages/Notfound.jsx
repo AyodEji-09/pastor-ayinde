@@ -1,9 +1,16 @@
-const NotFound = () => (
-  <div>
-    <h1>Not Found page</h1>
-    <p>The page you tried to access doesnt exist.</p>
-    <p>This is a generic route.</p>
-  </div>
-);
+import notFound from "../assets/images/404.jpg";
+import { Link } from "react-router-dom";
+const NotFound = () => {
+  return (
+    <div className="vw-100 vh-100 d-flex flex-column gap-1 justify-content-center align-items-center">
+      <img
+        src={notFound}
+        className="img-fluid shadow-sm rounded"
+        alt="Page not found"
+      />
+      <Link to="/" className="btn btn-outline-primary">Home</Link>
+    </div>
+  );
+};
 
 export default NotFound;
