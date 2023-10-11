@@ -26,12 +26,34 @@
   -webkit-text-fill-color: transparent;
 }
 /* Homepage style  */
-#home{
-  background: url('./assets/images/bg.jpg') no-repeat;
+#home {
+  background: url("./assets/images/bg.jpg") no-repeat;
   height: 100vh;
 }
 #home .home__name {
   font-size: 2rem;
   font-weight: bolder;
   margin-right: 5px;
+}
+.contact-icons {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.contact-icons a {
+  align-items: center;
+  background-color: var(--light-0);
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
+    -4px -4px 8px -1px hsla(0, 0%, 100%, 0.11);
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  width: 35px;
+}
+.contact-icons a:hover {
+  box-shadow: inset 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
+    inset -4px -4px 8px -1px hsla(0, 0%, 100%, 0);
+  transform: scale(0.95);
 }

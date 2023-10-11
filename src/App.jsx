@@ -7,14 +7,14 @@ const Songs = lazy(() => import("./pages/Songs"));
 const Books = lazy(() => import("./pages/Books"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
-const Loading = lazy(() => import("./pages/Loading"));
+// const Loading = lazy(() => import("./pages/Loading"));
 const NotFound = lazy(() => import("./pages/Notfound"));
 
 function App() {
   return (
     <>
       <Header />
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={""}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
