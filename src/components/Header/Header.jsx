@@ -5,7 +5,7 @@ import { AiOutlineProfile } from "react-icons/ai";
 import { BsBook, BsMusicNoteBeamed } from "react-icons/bs";
 import logo from "../../assets/images/logo/logo_main.png";
 import { NavLink } from "react-router-dom";
-import './Header.css'
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -16,7 +16,7 @@ const Header = () => {
             <img src={logo} alt="logo" width="100" />
           </NavLink>
           <button
-            className="btn btn-outline-primary p-0 fs-1 d-lg-none"
+            className="btn btn-outline-primary p-0 fs-1 d-lg-none d-flex align-items-center"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -24,9 +24,7 @@ const Header = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar--icon">
-              <CgMenuGridR />
-            </span>
+            <CgMenuGridR />
           </button>
           <div
             className="collapse navbar-collapse "
@@ -34,24 +32,37 @@ const Header = () => {
           >
             <ul className="navbar-nav m-auto">
               <li className="nav-item me-5 my-sm-1 my-1 my-lg-0">
-                <NavLink className="nav-NavLink d-flex align-items-center" aria-current="page" to="/">
+                <NavLink
+                  className="nav-NavLink d-flex align-items-center"
+                  aria-current="page"
+                  to="/"
+                >
                   <AiFillHome style={{ marginRight: "5px" }} /> Home
                 </NavLink>
               </li>
               <li className="nav-item me-5 my-sm-1 my-1 my-lg-0">
-                <NavLink className="nav-NavLink d-flex align-items-center" to="/about">
+                <NavLink
+                  className="nav-NavLink d-flex align-items-center"
+                  to="/about"
+                >
                   <AiOutlineProfile style={{ marginRight: "5px" }} />
                   About
                 </NavLink>
               </li>
               <li className="nav-item me-5 my-sm-1 my-1 my-lg-0">
-                <NavLink className="nav-NavLink d-flex align-items-center" to="/books">
+                <NavLink
+                  className="nav-NavLink d-flex align-items-center"
+                  to="/books"
+                >
                   <BsBook style={{ marginRight: "5px" }} />
                   Books
                 </NavLink>
               </li>
               <li className="nav-item me-5 my-sm-1 my-1 my-lg-0">
-                <NavLink className="nav-NavLink d-flex align-items-center" to="/songs">
+                <NavLink
+                  className="nav-NavLink d-flex align-items-center"
+                  to="/songs"
+                >
                   <BsMusicNoteBeamed style={{ marginRight: "5px" }} />
                   Songs
                 </NavLink>
