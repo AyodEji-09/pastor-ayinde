@@ -1,4 +1,5 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,3 +13,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* Homepage style  */
+#home .home__name {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-right: 5px;
+  font-family: 'Playball', cursive;
+}

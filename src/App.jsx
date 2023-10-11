@@ -8,7 +8,7 @@ const Books = lazy(() => import("./pages/Books"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Loading = lazy(() => import("./pages/Loading"));
-const NotFound = lazy(() => import("./pages/NotFound"));
+const NotFound = lazy(() => import("./pages/Notfound"));
 
 function App() {
   return (
