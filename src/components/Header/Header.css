@@ -1,0 +1,17 @@
+.navbar {
+  z-index: 1000;
+}
+.nav-NavLink {
+  color: #242424;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1.7px solid transparent;
+}
+.nav-NavLink:hover {
+  border: 1.7px solid var(--bs-primary);
+  color: var(--bs-primary);
+}
+.nav-NavLink.active {
+  color: var(--bs-white);
+  background-color: var(--bs-primary);
+}
