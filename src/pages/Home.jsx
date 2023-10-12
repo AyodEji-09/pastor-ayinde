@@ -1,5 +1,6 @@
 // import loading from "../assets/images/loading.jpg";
 import { Link } from "react-router-dom";
+import transition from "../components/transition";
 
 const Home = () => {
   return (
@@ -61,9 +62,9 @@ const Home = () => {
                       <path
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M16 7S9 1 2 6v22c7-5 14 0 14 0s7-5 14 0V6c-7-5-14 1-14 1Zm0 0v21"
                       />
                     </svg>
@@ -81,9 +82,9 @@ const Home = () => {
                       <g
                         fill="none"
                         stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                       >
                         <path d="M9 18V5l12-2v13" />
                         <circle cx="6" cy="18" r="3" />
@@ -161,26 +162,25 @@ const Home = () => {
                     rel="noreferrer"
                     href="mailto:sasamuelayinde@gmail.com"
                   >
-                    <i>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true"
-                        focusable="false"
-                        width="1.5em"
-                        height="1.5em"
-                        viewBox="0 0 32 32"
+                    {""}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      focusable="false"
+                      width="1.5em"
+                      height="1.5em"
+                      viewBox="0 0 32 32"
+                    >
+                      <g
+                        fill="none"
+                        stroke="#626262"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="3"
                       >
-                        <g
-                          fill="none"
-                          stroke="#626262"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="3"
-                        >
-                          <path d="M2 26h28V6H2zM2 6l14 10L30 6" />
-                        </g>
-                      </svg>
-                    </i>
+                        <path d="M2 26h28V6H2zM2 6l14 10L30 6" />
+                      </g>
+                    </svg>
                   </a>
                   {/* <a target="_blank" rel="noreferrer" href="tel:+2348157037737">
                     <i>
@@ -211,4 +211,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default transition(Home);

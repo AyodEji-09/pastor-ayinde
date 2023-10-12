@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer p-1 text-center">
               <p className="m-0 p-0 text-light">
                 Copyright © {year} Samuel Ayinde, All rights reserved.
-              </p>
+              </p> 
             </div>
           </div>
         </div>

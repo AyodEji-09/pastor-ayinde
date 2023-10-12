@@ -1,3 +1,5 @@
+import transition from "../components/transition";
+
 const Books = () => {
   return (
     <div className="container vw-100 vh-100 d-flex justify-content-center align-items-center">
@@ -6,4 +8,4 @@ const Books = () => {
   );
 };
 
-export default Books;
+export default transition(Books);
