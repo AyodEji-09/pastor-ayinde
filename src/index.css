@@ -44,6 +44,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* breadcrump  */
+.inner{
+  background: url("./assets/images/inner.jpg") no-repeat;
+}
 /* Homepage style  */
 #home {
   background: url("./assets/images/bg.jpg") no-repeat;

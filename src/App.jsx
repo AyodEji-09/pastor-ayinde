@@ -8,6 +8,7 @@ import Books from "./pages/Books";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/Notfound";
+import { Toaster } from "react-hot-toast";
 // import { Suspense, lazy } from "react";
 // const Header = lazy(() => import("./components/Header/Header"));
 // const Footer = lazy(() => import("./components/Footer/Footer"));
@@ -36,6 +37,7 @@ function App() {
         </Routes>
       </AnimatePresence>
       <Footer />
+      <Toaster />
     </>
   );
 }
