@@ -25,6 +25,7 @@ function App() {
       <Header />
       <AnimatePresence mode="wait">
         {/* <Suspense fallback={""}> */}
+        {/* </Suspense> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -33,7 +34,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        {/* </Suspense> */}
       </AnimatePresence>
       <Footer />
     </>
