@@ -1,14 +1,14 @@
 import transition from "../components/transition";
-import { useLocation } from "react-router-dom";
+import Breadcrump from "../components/common/Breadcrump";
 
 const Musics = () => {
-  const location = useLocation()
-  console.log(location.pathname
-    )
   return (
-    <div className="container vw-100 vh-100 d-flex justify-content-center align-items-center">
-      <h1>songs page</h1>
-    </div>
+    <section id="about">
+      <div className="container vh-100">
+        <Breadcrump page="All Songs" />
+
+      </div>
+    </section>
   );
 };
 

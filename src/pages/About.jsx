@@ -1,10 +1,14 @@
 import transition from "../components/transition";
+import Breadcrump from "../components/common/Breadcrump";
 
 const About = () => {
   return (
-    <div className="container vw-100 vh-100 d-flex justify-content-center align-items-center">
-      <h1>About page</h1>
-    </div>
+    <section id="about">
+      <div className="container vh-100">
+        <Breadcrump page="About Page" />
+       
+      </div>
+    </section>
   );
 };
 
