@@ -27,7 +27,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Samuel Ayinde",
           from_email: form.email,
-          to_email: "abiodunsamyemi@gmail.com",
+          to_email: "sasamuelayinde@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -64,7 +64,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="container vh-100">
-        <Breadcrump page="Contact Page" />
+        <Breadcrump page="Contact Me" />
         <div className="row d-flex">
           <div className="col-lg-5 my-1">
             <div className="shadow-sm bg-white rounded p-1">
@@ -78,6 +78,7 @@ const Contact = () => {
                   value={form.name}
                   onChange={handleChange}
                   placeholder="Name"
+                  required
                   className="form-control my-1"
                 />
                 <input
@@ -85,6 +86,7 @@ const Contact = () => {
                   name="email"
                   value={form.email}
                   onChange={handleChange}
+                  required
                   placeholder="Email"
                   className="form-control my-1"
                 />
@@ -102,6 +104,7 @@ const Contact = () => {
                   onChange={handleChange}
                   className="form-control my-1"
                   placeholder="Message"
+                  required
                   rows="5"
                 ></textarea>
                 <button onClick={handleSubmit} className="btn btn-primary mt-1">

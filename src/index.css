@@ -44,8 +44,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.lh-2 {
+  line-height: 1.45;
+}
 /* breadcrump  */
-.inner{
+.inner {
   background: url("./assets/images/inner.jpg") no-repeat;
 }
 /* Homepage style  */
@@ -53,7 +56,7 @@
   background: url("./assets/images/bg.jpg") no-repeat;
   min-height: 100vh;
 }
-#home .home__name {
+.home__name {
   font-size: 2rem;
   font-weight: bolder;
   margin-right: 5px;
@@ -79,4 +82,19 @@
   box-shadow: inset 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
     inset -4px -4px 8px -1px hsla(0, 0%, 100%, 0);
   transform: scale(0.95);
+}
+
+/* about page   */
+.about__image {
+  position: relative;
+}
+.about__image img::after {
+  content: "";
+  position: absolute;
+  border: 2px solid var(--bs-primary);
+  border-radius: 4px;
+  top: -5px;
+  right: 5px;
+  height: 100%;
+  width: 100%;
 }
