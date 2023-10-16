@@ -45,16 +45,15 @@
   -webkit-text-fill-color: transparent;
 }
 .lh-2 {
-  line-height: 1.45;
+  line-height: 1.5;
 }
 /* breadcrump  */
 .inner {
   background: url("./assets/images/inner.jpg") no-repeat;
 }
 /* Homepage style  */
-#home {
+#hero {
   background: url("./assets/images/bg.jpg") no-repeat;
-  min-height: 100vh;
 }
 .home__name {
   font-size: 2rem;
@@ -66,6 +65,9 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: -10rem;
+  padding: 10px;
+  border-radius: 4px;
 }
 .contact-icons a {
   align-items: center;

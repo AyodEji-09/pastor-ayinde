@@ -1,6 +1,6 @@
 import transition from "../components/transition";
 import Breadcrump from "../components/common/Breadcrump";
-// import loading from "../assets/images/loading.jpg";
+import profile from "../assets/images/about_img.jpg";
 
 const About = () => {
   return (
@@ -8,10 +8,13 @@ const About = () => {
       <div className="container">
         <Breadcrump page="About Me" />
         <div className="row my-3">
-          <div className="col-lg-6 my-1">
+          <div className="col-lg-4 col-sm-6 col-md-5 my-1">
             <div className="about__image">
-              <h4>Profile Image</h4>
-              {/* <img src={loading} alt="" /> */}
+              <img
+                src={profile}
+                alt="profile image"
+                className="img-fluid shadow rounded"
+              />
             </div>
           </div>
           <div className="col-lg-6 my-1">
