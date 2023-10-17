@@ -26,9 +26,9 @@ const Footer = () => {
                 <Link className="text-light d-flex align-items-center" to={"/books"}>
                   <BsBook />
                 </Link>
-                <Link className="text-light d-flex align-items-center" to={"/songs"}>
+                {/* <Link className="text-light d-flex align-items-center" to={"/songs"}>
                   <BsMusicNoteBeamed />
-                </Link>
+                </Link> */}
                 <Link className="text-light d-flex align-items-center" to={"/contact"}>
                   <FaRegAddressCard />
                 </Link>

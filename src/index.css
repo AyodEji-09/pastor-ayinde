@@ -53,7 +53,10 @@
 }
 /* Homepage style  */
 #hero {
-  background: url("./assets/images/bg.jpg") no-repeat;
+  /* background: url("./assets/images/bg.jpg") no-repeat; */
+  background: url("./assets/images/hero_img.jpg") no-repeat;
+  background-size: cover;
+  background-position: left 20%;
 }
 .home__name {
   font-size: 2rem;
@@ -66,7 +69,7 @@
   justify-content: center;
   gap: 1rem;
   margin-top: -10rem;
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 4px;
 }
 .contact-icons a {
@@ -76,9 +79,10 @@
   box-shadow: 4px 4px 8px -1px rgba(0, 0, 0, 0.25),
     -4px -4px 8px -1px hsla(0, 0%, 100%, 0.11);
   display: flex;
-  height: 35px;
+  padding: 7px;
   justify-content: center;
-  width: 35px;
+  /* height: 35px;
+  width: 35px; */
 }
 .contact-icons a:hover {
   box-shadow: inset 4px 4px 8px -1px rgba(0, 0, 0, 0.25),

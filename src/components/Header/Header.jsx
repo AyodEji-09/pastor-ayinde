@@ -58,7 +58,7 @@ const Header = () => {
                   Books
                 </NavLink>
               </li>
-              <li className="nav-item me-5 my-sm-1 my-1 my-lg-0">
+              {/* <li className="nav-item me-5 my-sm-1 my-1 my-lg-0">
                 <NavLink
                   className="nav-NavLink d-flex align-items-center"
                   to="/songs"
@@ -66,7 +66,7 @@ const Header = () => {
                   <BsMusicNoteBeamed style={{ marginRight: "5px" }} />
                   Songs
                 </NavLink>
-              </li>
+              </li> */}
               <li className="nav-item me-5 my-sm-1 my-1 my-lg-0">
                 <NavLink
                   className="nav-NavLink d-flex align-items-center"
