@@ -1,4 +1,4 @@
-import { FaRegAddressCard } from "react-icons/fa";
+import { FaRegAddressCard, FaPodcast, FaBlogger } from "react-icons/fa";
 import { CgMenuGridR } from "react-icons/cg";
 import { AiFillHome } from "react-icons/ai";
 import { AiOutlineProfile } from "react-icons/ai";
@@ -56,6 +56,24 @@ const Header = () => {
                 >
                   <BsBook style={{ marginRight: "5px" }} />
                   Books
+                </NavLink>
+              </li>
+              <li className="nav-item me-5 my-sm-1 my-1 my-lg-0">
+                <NavLink
+                  className="nav-NavLink d-flex align-items-center"
+                  to="/podcasts"
+                >
+                  <FaPodcast style={{ marginRight: "5px" }} />
+                  Podcasts
+                </NavLink>
+              </li>
+              <li className="nav-item me-5 my-sm-1 my-1 my-lg-0">
+                <NavLink
+                  className="nav-NavLink d-flex align-items-center"
+                  to="/blogs"
+                >
+                  <FaBlogger style={{ marginRight: "5px" }} />
+                  Blogs
                 </NavLink>
               </li>
               {/* <li className="nav-item me-5 my-sm-1 my-1 my-lg-0">

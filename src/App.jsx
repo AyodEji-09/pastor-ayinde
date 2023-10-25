@@ -8,6 +8,8 @@ import Books from "./pages/Books";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/Notfound";
+import Blogs from "./pages/Blogs";
+import Podcasts from "./pages/Podcasts";
 import { Toaster } from "react-hot-toast";
 // import { Suspense, lazy } from "react";
 // const Header = lazy(() => import("./components/Header/Header"));
@@ -33,6 +35,8 @@ function App() {
           <Route path="/books" element={<Books />} />
           <Route path="/songs" element={<Songs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/podcasts" element={<Podcasts />} />
+          <Route path="/blogs" element={<Blogs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>

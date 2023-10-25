@@ -6,7 +6,7 @@ const Books = () => {
   return (
     <section id="about">
       <div className="container">
-        <Breadcrump page="All Books" />
+        <Breadcrump page="Books" />
 
         <div className="row">
           {books.map((book) => (
