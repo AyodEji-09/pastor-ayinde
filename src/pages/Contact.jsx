@@ -125,18 +125,19 @@ const Contact = () => {
               <div className="contact__image shadow">
                 <h1 className="text-white fw-bolder">Social Media</h1>
               </div>
-              <div className="d-flex mt-3 justify-content-start align-items-center flex-wrap gap-lg-2 gap-1">
+              <div className="d-flex mt-3 mb-1 justify-content-start align-items-center flex-wrap gap-lg-3 gap-1">
                 <a
+                  style={{ padding: "10px" }}
                   title="Amazon"
-                  className="rounded p-1 shadow border-2 border"
+                  className="rounded shadow border-2 border"
                   target="_blank"
                   href="http://rb.gy/uord9l"
                 >
                   <i>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="2.5em"
-                      height="2.5em"
+                      width="2em"
+                      height="2em"
                       viewBox="0 0 16 16"
                     >
                       <g fill="currentColor">
@@ -147,16 +148,17 @@ const Contact = () => {
                   </i>
                 </a>
                 <a
+                  style={{ padding: "10px" }}
                   title="Youtube"
-                  className="rounded p-1 shadow border-2 border"
+                  className="rounded shadow border-2 border"
                   target="_blank"
                   href="https://www.youtube.com/@samuelayinde1"
                 >
                   <i>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="2.5em"
-                      height="2.5em"
+                      width="2em"
+                      height="2em"
                       viewBox="0 0 256 180"
                     >
                       <path
@@ -172,13 +174,14 @@ const Contact = () => {
                 </a>
                 {/* facebook  */}
                 <a
+                  style={{ padding: "10px" }}
                   title="Facebook"
-                  className="rounded p-1 shadow border-2 border"
+                  className="rounded shadow border-2 border"
                   target="_blank"
                   href="https://www.facebook.com/profile.php?id=100095712720325&mibextid=ZbWKwL"
                 >
                   <i>
-                    <svg width="2.5em" height="2.5em" viewBox="0 0 486.037 1000">
+                    <svg width="2em" height="2em" viewBox="0 0 486.037 1000">
                       <path
                         d="M124.074 1000V530.771H0V361.826h124.074V217.525C124.074 104.132 197.365 0 366.243 0C434.619 0 485.18 6.555 485.18 6.555l-3.984 157.766s-51.564-.502-107.833-.502c-60.9 0-70.657 28.065-70.657 74.646v123.361h183.331l-7.977 168.945H302.706V1000H124.074"
                         fill="#4267B2"
@@ -188,13 +191,14 @@ const Contact = () => {
                 </a>
                 {/* instagram  */}
                 <a
+                  style={{ padding: "10px" }}
                   title="Instagram"
-                  className="rounded p-1 shadow border-2 border"
+                  className="rounded shadow border-2 border"
                   target="_blank"
                   href="http://instagram.com/thesamuelayinde"
                 >
                   <i>
-                    <svg width="2.5em" height="2.5em" viewBox="0 0 256 256">
+                    <svg width="2em" height="2em" viewBox="0 0 256 256">
                       <path
                         d="M128 80a48 48 0 1 0 48 48a48.054 48.054 0 0 0-48-48zm0 80a32 32 0 1 1 32-32a32.036 32.036 0 0 1-32 32zm44-132H84a56.064 56.064 0 0 0-56 56v88a56.064 56.064 0 0 0 56 56h88a56.064 56.064 0 0 0 56-56V84a56.064 56.064 0 0 0-56-56zm40 144a40.045 40.045 0 0 1-40 40H84a40.045 40.045 0 0 1-40-40V84a40.045 40.045 0 0 1 40-40h88a40.045 40.045 0 0 1 40 40zm-20-96a12 12 0 1 1-12-12a12 12 0 0 1 12 12z"
                         fill="#E1306C"
@@ -204,8 +208,9 @@ const Contact = () => {
                 </a>
                 {/* twitter  */}
                 <a
+                  style={{ padding: "10px" }}
                   title="Twitter"
-                  className="rounded p-1 shadow border-2 border"
+                  className="rounded shadow border-2 border"
                   target="_blank"
                   href="http://twitter.com/sasamuelayinde"
                 >
@@ -215,8 +220,8 @@ const Contact = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       aria-hidden="true"
                       focusable="false"
-                      width="2.5em"
-                      height="2.5em"
+                      width="2em"
+                      height="2em"
                       viewBox="0 0 24 24"
                     >
                       <g fill="none">
@@ -229,8 +234,9 @@ const Contact = () => {
                   </i>
                 </a>
                 <a
+                  style={{ padding: "10px" }}
                   title="Mail"
-                  className="rounded p-1 shadow border-2 border"
+                  className="rounded shadow border-2 border"
                   target="_blank"
                   href="mailto:sasamuelayinde@gmail.com;"
                 >
@@ -240,8 +246,8 @@ const Contact = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       aria-hidden="true"
                       focusable="false"
-                      width="2.5em"
-                      height="2.5em"
+                      width="2em"
+                      height="2em"
                       viewBox="0 0 32 32"
                     >
                       <g
@@ -257,16 +263,17 @@ const Contact = () => {
                   </i>
                 </a>
                 <a
+                  style={{ padding: "10px" }}
                   title="LinkTree"
-                  className="rounded p-1 shadow border-2 border"
+                  className="rounded shadow border-2 border"
                   target="_blank"
                   href="https://linktr.ee/thesamuelayinde"
                 >
                   <i>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="2.5em"
-                      height="2.5em"
+                      width="2em"
+                      height="2em"
                       viewBox="0 0 24 24"
                     >
                       <path
