@@ -51,6 +51,16 @@
 .inner {
   background: url("./assets/images/inner.jpg") no-repeat;
 }
+.contact__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/images/contact-img.jpg") no-repeat;
+  height: 300px;
+}
 /* Homepage style  */
 #hero {
   /* background: url("./assets/images/bg.jpg") no-repeat; */
