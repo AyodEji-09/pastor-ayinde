@@ -1,9 +1,11 @@
 import Breadcrump from "../components/common/Breadcrump";
+import HelmetComponent from "../components/common/Helmet";
 import transition from "../components/transition";
 
 const Blogs = () => {
   return (
     <section id="blogs">
+      <HelmetComponent pageTitle="Samuel Ayinde | Blogs" />
       <div className="container vh-100">
         <Breadcrump page="Blogs" />
 

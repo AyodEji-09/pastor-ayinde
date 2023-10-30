@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import Breadcrump from "../components/common/Breadcrump";
+import HelmetComponent from "../components/common/Helmet";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -63,6 +64,8 @@ const Contact = () => {
 
   return (
     <section id="contact">
+      <HelmetComponent pageTitle="Samuel Ayinde | Contact" />
+
       <div className="container">
         <Breadcrump page="Contact Me" />
         <div className="row my-3">

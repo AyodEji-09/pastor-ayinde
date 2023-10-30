@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import transition from "../components/transition";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import HelmetComponent from "../components/common/Helmet";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -26,7 +27,7 @@ const Home = () => {
       viewport={{ once: true }}
       onViewportEnter={() => setIsInView(true)}
     >
-      {" "}
+      <HelmetComponent pageTitle="Samuel Ayinde | Home" />
       <main id="hero">
         <div className="container">
           <div className="row d-flex justify-content-center">

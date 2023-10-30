@@ -1,10 +1,12 @@
 import transition from "../components/transition";
 import Breadcrump from "../components/common/Breadcrump";
 import { books } from "../utils/data";
+import HelmetComponent from "../components/common/Helmet";
 
 const Books = () => {
   return (
     <section id="about">
+      <HelmetComponent pageTitle="Samuel Ayinde | Books" />
       <div className="container">
         <Breadcrump page="Books" />
 

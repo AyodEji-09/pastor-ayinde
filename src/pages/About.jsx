@@ -1,6 +1,7 @@
 import transition from "../components/transition";
 import Breadcrump from "../components/common/Breadcrump";
 import profile from "../assets/images/about_img.jpg";
+import HelmetComponent from "../components/common/Helmet";
 
 // const apiKey =  import.meta.env.VITE_APP_GOOGLE_API_KEY
 // const channelId = import.meta.env.VITE_APP_CHANNEL_ID
@@ -17,6 +18,8 @@ import profile from "../assets/images/about_img.jpg";
 const About = () => {
   return (
     <section id="about">
+      <HelmetComponent pageTitle="Samuel Ayinde | About" />
+
       <div className="container">
         <Breadcrump page="About Me" />
         <div className="row my-3 d-flex align-items-stretch">

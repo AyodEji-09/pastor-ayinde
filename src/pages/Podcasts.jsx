@@ -1,10 +1,11 @@
 import Breadcrump from "../components/common/Breadcrump";
+import HelmetComponent from "../components/common/Helmet";
 import transition from "../components/transition";
 
 const Podcasts = () => {
- 
   return (
     <section id="podcasts">
+      <HelmetComponent pageTitle="Samuel Ayinde | Podcasts" />
       <div className="container vh-100">
         <Breadcrump page="Podcasts" />
         <div className="row d-flex justify-content-center">
