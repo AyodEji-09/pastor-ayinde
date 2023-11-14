@@ -9982,7 +9982,8 @@ fieldset:disabled .btn {
 
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: var(--bs-primary) !important;
+  /* rgba(var(--bs-primary-rgb), var(--bs-text-opacity))  */
 }
 
 .text-secondary {

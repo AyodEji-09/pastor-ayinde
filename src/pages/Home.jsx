@@ -1,9 +1,11 @@
-import hero_img from "../assets/images/hero_img.jpg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import transition from "../components/transition";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import HelmetComponent from "../components/common/Helmet";
+import Slider from "react-slick";
+import { books } from "../utils/data";
+import svg from "../assets/images/svg.svg";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -14,6 +16,41 @@ const Home = () => {
   useEffect(() => {
     setIsLoaded(true);
   });
+  let settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <motion.div
@@ -28,12 +65,25 @@ const Home = () => {
       onViewportEnter={() => setIsInView(true)}
     >
       <HelmetComponent pageTitle="Samuel Ayinde | Home" />
-      <main id="hero">
-        <div className="container">
-          <div className="row d-flex justify-content-center">
-            <div className="col-lg-6 vh-100 d-flex justify-content-center align-items-center position-relative">
-              <div className="p-1 position-absolute bottom-0 right-0 bg-white shadow-lg rounded mx-1 mb-2">
-                <div className="d-flex justify-content-start align-items-center flex-wrap gap-lg-2 gap-1">
+      <main>
+        <section id="hero">
+          <div className="container pt-5">
+            <div className="row pt-5 vh-100">
+              <div className="col-lg-4">
+                <div className="hero__text shadow">
+                  <p className="lead text-dark lh-2">
+                    <q>
+                      Remember your leaders, those who spoke to you the word of
+                      God. Consider the outcome of their way of life, and
+                      imitate their faith
+                    </q>{" "}
+                    - <b>Hebrews 13:7</b>
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-4 d-flex flex-column justify-content-end align-items-center">
+                <h1 className="hero__name">Pastor Ayinde Samuel</h1>
+                <div className="mb-5 d-flex justify-content-start align-items-center flex-wrap gap-lg-2 gap-1 bg-white p-1 shadow rounded">
                   <a
                     style={{ padding: "6px" }}
                     title="Amazon"
@@ -196,28 +246,127 @@ const Home = () => {
                     </i>
                   </a>
                 </div>
-                {/* <p>
-                  <span className="home__name text-radial">
-                    Samuel Ayinde
-                  </span>
-                  <span className="lead" style={{ lineHeight: 1.55 }}>
-                    holds a PhD in mechanical engineering from the University of
-                    Michigan, Ann Arbor and a Graduate Certificate in counseling
-                    from the RCCGNA Seminary, Greenville...
-                    <Link
-                      className="text-primary text-decoration-underline"
-                      to="/about"
-                    >
-                      {" "}
-                      Read more
-                    </Link>
-                  </span>
-                </p>
-                */}
               </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        <section id="video">
+          <div className="container">
+            <div className="row">
+              {/* <div className=""> */}
+              <Slider {...settings}>
+                {books.map((book, index) => (
+                  <div
+                    className="col-lg-3 col-md-6 col-sm-6 me-2 d-flex align-items-stretch"
+                    key={book.title + index}
+                  >
+                    <div className="book__slider card me-2">
+                      <div
+                        className="card-body  rounded shadow-sm"
+                        style={{ zIndex: 1 }}
+                      >
+                        <small>{book.dop}</small>
+                        <a href={book.url} target="_blank">
+                          <h5 className="card-title fs-4 fw-bold text-primary fw-bold">
+                            {book.title}
+                          </h5>
+                        </a>
+                        <p className="card-text">
+                          {book.description.substring(0, 100)}...
+                        </p>
+                        <div className="d-flex gap-1 flex-wrap">
+                          <span>Formats: </span>
+                          {book?.format?.map((format, index) => (
+                            <a key={index} target="_blank" href={format.url}>
+                              {format.type}
+                            </a>
+                          ))}
+                        </div>
+                        <hr />
+                        <div className="d-flex gap-1 flex-wrap">
+                          <span>Pages: </span>
+                          <em className="fst-italic">{book.pages}</em>
+                        </div>
+                      </div>
+                      <img
+                        src={svg}
+                        alt="svg"
+                        style={{ zIndex: 0 }}
+                        className="img-fluid position-absolute bottom-0"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </Slider>
+              {/* </div> */}
+            </div>
+          </div>
+        </section>
+
+        {/* contact section  */}
+        <section id="contact">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 text-center">
+                <h2 className="text-primary fs-1">Contact Me</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="video">
+          <div className="container">
+            <div className="row">
+              {/* <div className=""> */}
+              <Slider {...settings}>
+                {books.map((book, index) => (
+                  <div
+                    className="col-lg-3 col-md-6 col-sm-6 me-2 d-flex align-items-stretch"
+                    key={book.title + index}
+                  >
+                    <div className="book__slider card me-2">
+                      <div
+                        className="card-body  rounded shadow-sm"
+                        style={{ zIndex: 1 }}
+                      >
+                        <small>{book.dop}</small>
+                        <a href={book.url} target="_blank">
+                          <h5 className="card-title fs-4 fw-bold text-primary fw-bold">
+                            {book.title}
+                          </h5>
+                        </a>
+                        <p className="card-text">
+                          {book.description.substring(0, 100)}...
+                        </p>
+                        <div className="d-flex gap-1 flex-wrap">
+                          <span>Formats: </span>
+                          {book?.format?.map((format, index) => (
+                            <a key={index} target="_blank" href={format.url}>
+                              {format.type}
+                            </a>
+                          ))}
+                        </div>
+                        <hr />
+                        <div className="d-flex gap-1 flex-wrap">
+                          <span>Pages: </span>
+                          <em className="fst-italic">{book.pages}</em>
+                        </div>
+                      </div>
+                      <img
+                        src={svg}
+                        alt="svg"
+                        style={{ zIndex: 0 }}
+                        className="img-fluid position-absolute bottom-0"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </Slider>
+              {/* </div> */}
+            </div>
+          </div>
+        </section>
       </main>
     </motion.div>
   );

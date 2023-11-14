@@ -30,6 +30,11 @@
   background: #242424;
   transform-origin: top;
 }
+/* .book__slider{
+  background: url('./assets/images/svg.svg') no-repeat !important;
+  background-position: center;
+  background-size: cover;
+} */
 .text-radial {
   background: radial-gradient(
     circle,
@@ -49,7 +54,11 @@
 }
 /* breadcrump  */
 .inner {
-  background: url("./assets/images/inner.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./assets/images/inner.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 15rem;
 }
 .contact__image {
   display: flex;
@@ -63,11 +72,36 @@
 }
 /* Homepage style  */
 #hero {
-  /* background: url("./assets/images/bg.jpg") no-repeat; */
   background: url("./assets/images/hero_img.jpg") no-repeat;
   background-size: cover;
-  background-position: left 20%;
+  background-position: center 0px;
 }
+.hero__text {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.hero__name {
+  font-family: "Dancing Script", cursive;
+  color: rgb(199, 223, 254);
+  font-size: 2.5rem;
+}
+/* video section   */
+section#video, section#contact {
+  padding: 5rem 0;
+}
+/* contact section  */
+section#contact{
+  background:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('./assets/images/contact-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* about page   */
+
 .home__name {
   font-size: 2rem;
   font-weight: bolder;
@@ -100,7 +134,6 @@
   transform: scale(0.95);
 }
 
-/* about page   */
 .about__image {
   position: relative;
 }
