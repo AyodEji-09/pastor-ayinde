@@ -7,7 +7,7 @@ const Breadcrump = ({ page }) => {
           <div className="col-lg-12 p-1 rounded text-center">
             <h1 className="text-white fs-1">{page}</h1>
             <p>
-              <Link className="text-primary" to="/">
+              <Link className="text-secondary" to="/">
                 Home
               </Link>
             </p>

@@ -1,11 +1,13 @@
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const HelmetComponent = ({ pageTitle }) => {
   return (
     <>
-      <Helmet>
-        <title>{pageTitle}</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>{pageTitle}</title>
+        </Helmet>
+      </HelmetProvider>
     </>
   );
 };

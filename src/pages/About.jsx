@@ -8,12 +8,12 @@ const channelId = import.meta.env.VITE_APP_CHANNEL_ID;
 
 // const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=25&type=video`
 
-const fetchData = async () => {
-  const response = await fetch(url);
-  const results = await response.json();
-  console.log(results);
-};
-fetchData();
+// const fetchData = async () => {
+//   const response = await fetch(url);
+//   const results = await response.json();
+//   console.log(results);
+// };
+// fetchData();
 
 const About = () => {
   return (

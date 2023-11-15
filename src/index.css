@@ -30,11 +30,7 @@
   background: #242424;
   transform-origin: top;
 }
-/* .book__slider{
-  background: url('./assets/images/svg.svg') no-repeat !important;
-  background-position: center;
-  background-size: cover;
-} */
+
 .text-radial {
   background: radial-gradient(
     circle,
@@ -90,12 +86,19 @@
   font-size: 2.5rem;
 }
 /* video section   */
-section#video, section#contact {
+section#books_section,
+section#contact_section,
+section#video_section,
+section#about__section {
   padding: 5rem 0;
 }
+section#books_section {
+  background-color: #d6d2ed;
+}
 /* contact section  */
-section#contact{
-  background:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('./assets/images/contact-bg.jpg');
+section#contact_section {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("./assets/images/contact-bg.jpg");
   background-size: cover;
   background-position: center;
 }
