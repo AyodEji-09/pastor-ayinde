@@ -577,10 +577,9 @@ const Home = () => {
             <div className="row">
               {loading ? (
                 <>
-                  <div
-                    className="spinner-border text-danger text-center"
-                    role="status"
-                  ></div>
+                  <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
                 </>
               ) : null}
               <Slider {...settings}>
