@@ -574,14 +574,14 @@ const Home = () => {
                 More Videos <FaYoutube style={{ margin: "0 3px" }} />
               </a>
             </div>
+            {loading ? (
+              <>
+                <div class="spinner-border text-danger" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </>
+            ) : null}
             <div className="row">
-              {loading ? (
-                <>
-                  <div class="spinner-border text-danger" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                  </div>
-                </>
-              ) : null}
               <Slider {...settings}>
                 {videoId.map((id) => (
                   <div key={id} className="col-lg-3 col-md-6 mb-2">
