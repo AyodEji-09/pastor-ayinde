@@ -25,19 +25,16 @@ const About = () => {
         <div className="row my-3 d-flex align-items-stretch">
           <div className="col-lg-4 col-md-6 mb-2">
             <div className="about__desc">
-              <p className="lh-2">
-                <span className="home__name text-radial">Samuel Ayinde</span>
-                <span className="lead">
-                  holds a PhD in mechanical engineering from the University of
-                  Michigan, Ann Arbor and a Graduate Certificate in counseling
-                  from the RCCGNA Seminary, Greenville, Texas, United States. He
-                  graduated with a First Class grade in Wood Products
-                  Engineering and as the best graduating student of the
-                  department of Agricultural and Environmental Engineering,
-                  University of Ibadan, Nigeria.
-                </span>
+            <p className="lead rounded shadow-sm p-1" style={{ lineHeight: 2, background: '#eae8f6' }}>
+                Samuel Ayinde holds a PhD in mechanical engineering from the
+                University of Michigan, Ann Arbor and a Graduate Certificate in
+                counseling from the RCCGNA Seminary, Greenville, Texas, United
+                States. He graduated with a First Class grade in Wood Products
+                Engineering and as the best graduating student of the department
+                of Agricultural and Environmental Engineering, University of
+                Ibadan, Nigeria.
               </p>
-              <p className="lead lh-2">
+              <p className="lead rounded shadow-sm p-1" style={{ lineHeight: 2, background: '#eae8f6' }}>
                 He is ordained and serving as an assistant pastor with the
                 Redeemed Christian Church of God.
               </p>
@@ -54,9 +51,8 @@ const About = () => {
           </div>
           <div className="col-lg-4 col-md-12 mb-2">
             <div className="about__desc">
-              <p className="lead lh-2">
-                <span className="home__name text-radial">Samuel Ayinde</span>
-                has authored a couple of books including Let the Lord be
+              <p className="lead rounded shadow-sm p-1" style={{ lineHeight: 2, background: '#eae8f6' }}>
+                Samuel Ayinde  has authored a couple of books including Let the Lord be
                 Magnified, Attaining Academic Excellence, Make Your Life Count
                 for God, Set An Example, Exploring the Multidimensional Mercies
                 of God, Let us dive into the Word, Volume 1, Secret Canons for
@@ -65,7 +61,7 @@ const About = () => {
                 Songs, Volume 1-2.
               </p>
 
-              <p className="lead lh-2">
+              <p className="lead rounded shadow-sm p-1" style={{ lineHeight: 2, background: '#eae8f6' }}>
                 He is passionate about people discovering, understanding, and
                 fulfilling the purposes of God for their lives, with eternity in
                 view.

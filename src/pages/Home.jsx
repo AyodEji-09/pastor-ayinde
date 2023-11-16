@@ -107,7 +107,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-lg-4 d-flex flex-column justify-content-end align-items-center">
-                <h1 className="hero__name">Pastor Ayinde Samuel</h1>
+                <h1 className="hero__name">Pastor Samuel Ayinde</h1>
                 <div className="mb-5 d-flex justify-content-start align-items-center flex-wrap gap-lg-2 gap-1 bg-white p-1 shadow rounded">
                   <a
                     style={{ padding: "6px" }}
@@ -293,11 +293,11 @@ const Home = () => {
                   <h1 className="fw-bolder">About Me -</h1>
                   <div className="about__section-desc mt-2">
                     <p className="lead" style={{ lineHeight: "1.5" }}>
-                      Ayinde Samuel is an ordained and a serving assistant
+                      Samuel Ayinde is an ordained and a serving assistant
                       pastor with the Redeemed Christian Church of God.
                     </p>
                     <p className="lead" style={{ lineHeight: "1.5" }}>
-                      Samuel Ayindehas authored a couple of books including Let
+                      Samuel Ayinde has authored a couple of books including Let
                       the Lord be Magnified, Attaining Academic Excellence, Make
                       Your Life Count for God, Set An Example, Exploring the
                       Multidimensional Mercies of God, Let us dive into the
