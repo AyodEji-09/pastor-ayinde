@@ -68,7 +68,7 @@ const About = () => {
                 alt="profile image"
                 className="img-thumbnail rounded-pill"
               />
-              <div className="d-flex gap-lg-3 gap-2 bg-white shadow-sm p-1 justify-content-center align-items-center">
+              <div className="d-flex gap-lg-3 gap-2 rounded bg-white shadow-sm p-1 justify-content-center align-items-center">
                 <a target="_blank" href="http://rb.gy/uord9l">
                   <i>
                     <svg
