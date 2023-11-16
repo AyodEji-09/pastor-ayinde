@@ -74,6 +74,7 @@ const Contact = () => {
               <h4 className="lead my-1 text-radial fs-2 fw-bolder">
                 GET IN TOUCH
               </h4>
+
               <form>
                 <input
                   type="text"
@@ -110,16 +111,21 @@ const Contact = () => {
                   required
                   rows="5"
                 ></textarea>
-                <button onClick={handleSubmit} className="btn btn-primary mt-1">
-                  {loading ? (
+                {/* <button onClick={handleSubmit} className="btn btn-primary mt-1"> */}
+                <a
+                  className="btn btn-primary mt-1"
+                  href={`mailto:abiodunsamyemi@gmail.com?subject=${encodeURI(form.subject)}&body=${encodeURI(form.message)}%0D%0A%0D%0ACheers%2C%0D%0AThank%20You`}
+                >
+                  Send
+                </a>
+                {/* {loading ? (
                     <span
                       className="spinner-border spinner-border-sm mx-1"
                       role="status"
                       aria-hidden="true"
                     ></span>
-                  ) : null}
-                  Send
-                </button>
+                  ) : null} */}
+                {/* </button> */}
               </form>
             </div>
           </div>
