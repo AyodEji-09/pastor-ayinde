@@ -113,7 +113,7 @@ const Contact = () => {
                 ></textarea>
                 {/* <button onClick={handleSubmit} className="btn btn-primary mt-1"> */}
                 <a
-                  className="btn btn-primary mt-1"
+                  className="btn btn-primary mt-1 px-3"
                   href={`mailto:sasamuelayinde@gmail.com?subject=${encodeURI(form.subject)}&body=${encodeURI(form.message)}%0D%0A%0D%0ACheers%2C%0D%0AThank%20You`}
                 >
                   Send
