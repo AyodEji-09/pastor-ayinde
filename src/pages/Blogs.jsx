@@ -6,10 +6,10 @@ const Blogs = () => {
   return (
     <section id="blogs">
       <HelmetComponent pageTitle="Samuel Ayinde | Blogs" />
-      <div className="container vh-100">
+      <div className="container">
         <Breadcrump page="Blogs" />
 
-        <div className="row d-flex justify-content-center">
+        <div className="row d-flex justify-content-center my-2">
           <div className="col-lg-6">
             <img
               className="img-fluid"

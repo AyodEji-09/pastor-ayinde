@@ -18,6 +18,7 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   const videoId = [
+    "Z-ZrpMgybdA",
     "ybIig_PfM1M",
     "89zqUxtbD8A",
     "Up9vCsFTJ5w",
@@ -26,7 +27,7 @@ const Home = () => {
   ];
 
   const opts = {
-    height: "180",
+    height: 250,
     width: "320",
     playerVars: {
       autoplay: 0,
@@ -44,7 +45,7 @@ const Home = () => {
   let settings = {
     dots: false,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     speed: 500,
     slidesToShow: 3.5,
     slidesToScroll: 1,
@@ -339,9 +340,9 @@ const Home = () => {
               <Slider {...settings}>
                 {books.map((book, index) => (
                   <div
-                    className=""
+                    className="d-flex align-items-stretch"
                     key={book.title + index}
-                    style={{ height: "550px" }}
+                    // style={{ height: "550px" }}
                   >
                     <div className="book__slider card me-2">
                       <div
@@ -574,21 +575,25 @@ const Home = () => {
                 More Videos <FaYoutube style={{ margin: "0 3px" }} />
               </a>
             </div>
-            {loading ? (
-              <>
-                <div class="spinner-border text-danger" role="status">
-                  <span class="visually-hidden">Loading...</span>
+            <div className="row g-2">
+              {videoId.map((id) => (
+                <div key={id} className="col-lg-4 col-md-6 position-relative">
+                  {loading ? (
+                    <>
+                      <div
+                        className="spinner-border text-danger position-absolute top-50 start-50"
+                        role="status"
+                      ></div>
+                    </>
+                  ) : null}
+                  <YouTube
+                    iframeClassName={"w-100 rounded shadow"}
+                    opts={opts}
+                    videoId={id}
+                    onReady={_onReady}
+                  />
                 </div>
-              </>
-            ) : null}
-            <div className="row">
-              <Slider {...settings}>
-                {videoId.map((id) => (
-                  <div key={id} className="col-lg-3 col-md-6 mb-2">
-                    <YouTube opts={opts} videoId={id} onReady={_onReady} />
-                  </div>
-                ))}
-              </Slider>
+              ))}
             </div>
           </div>
         </section>

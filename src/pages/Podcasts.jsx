@@ -6,9 +6,9 @@ const Podcasts = () => {
   return (
     <section id="podcasts">
       <HelmetComponent pageTitle="Samuel Ayinde | Podcasts" />
-      <div className="container vh-100">
+      <div className="container">
         <Breadcrump page="Podcasts" />
-        <div className="row d-flex justify-content-center">
+        <div className="row d-flex justify-content-center my-2">
           <div className="col-lg-6">
             <img
               className="img-fluid"

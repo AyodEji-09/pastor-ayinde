@@ -5,16 +5,17 @@ import HelmetComponent from "../components/common/Helmet";
 import { FaPodcast } from "react-icons/fa";
 
 const apiKey = import.meta.env.VITE_APP_GOOGLE_API_KEY;
-const channelId = import.meta.env.VITE_APP_CHANNEL_ID;
+// const channelId = import.meta.env.VITE_APP_CHANNEL_ID;
+const channelId = "UCdrjoaHlqhZzhWbXyR_QS6g";
 
-// const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=25&type=video`
+const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=25&type=video`;
 
-// const fetchData = async () => {
-//   const response = await fetch(url);
-//   const results = await response.json();
-//   console.log(results);
-// };
-// fetchData();
+const fetchData = async () => {
+  const response = await fetch(url);
+  const results = await response.json();
+  console.log(results);
+};
+fetchData();
 
 const About = () => {
   return (
@@ -29,7 +30,7 @@ const About = () => {
               <div>
                 <p
                   style={{ padding: "4px", background: "#eae8f6" }}
-                  title="Youtube"
+                  title="About Me"
                   className="rounded-circle shadow border-2 border btn btn-md btn-outline-primary"
                 >
                   <FaPodcast />
@@ -49,7 +50,7 @@ const About = () => {
               <div>
                 <p
                   style={{ padding: "4px", background: "#eae8f6" }}
-                  title="Youtube"
+                  title="About Me"
                   className="rounded-circle shadow border-2 border btn btn-md btn-outline-primary"
                 >
                   <FaPodcast />
@@ -202,7 +203,7 @@ const About = () => {
               <div>
                 <p
                   style={{ padding: "4px", background: "#eae8f6" }}
-                  title="Youtube"
+                  title="About Me"
                   className="rounded-circle shadow border-2 border btn btn-md btn-outline-primary"
                 >
                   <FaPodcast />
@@ -222,7 +223,7 @@ const About = () => {
               <div>
                 <p
                   style={{ padding: "4px", background: "#eae8f6" }}
-                  title="Youtube"
+                  title="About Me"
                   className="rounded-circle shadow border-2 border btn btn-md btn-outline-primary"
                 >
                   <FaPodcast />
