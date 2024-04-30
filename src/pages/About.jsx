@@ -40,10 +40,7 @@ const About = () => {
                 Samuel Ayinde holds a PhD in mechanical engineering from the
                 University of Michigan, Ann Arbor and a Graduate Certificate in
                 counseling from the RCCGNA Seminary, Greenville, Texas, United
-                States. He graduated with a First Class grade in Wood Products
-                Engineering and as the best graduating student of the department
-                of Agricultural and Environmental Engineering, University of
-                Ibadan, Nigeria.
+                States.
               </p>
             </div>
             <div className="about__desc bg-white rounded shadow-sm p-1 mb-2 d-flex gap-1 align-items-start">

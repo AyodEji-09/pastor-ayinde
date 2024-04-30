@@ -108,7 +108,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-lg-4 d-flex flex-column justify-content-end align-items-center">
-                <h1 className="hero__name">Pastor Samuel Ayinde</h1>
+                <h1 className="hero__name">Samuel Ayinde</h1>
                 <div className="mb-5 d-flex justify-content-start align-items-center flex-wrap gap-lg-2 gap-1 bg-white p-1 shadow rounded">
                   <a
                     style={{ padding: "6px" }}
@@ -284,7 +284,7 @@ const Home = () => {
                 <div>
                   <img
                     src={about}
-                    alt="Pastor Samuel Ayinde"
+                    alt="Samuel Ayinde"
                     className="img-thumbnail rounded-pill border border-2"
                   />
                 </div>
